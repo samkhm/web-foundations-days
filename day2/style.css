@@ -1,0 +1,225 @@
+/* ================================
+Box-sizing Reset
+================================ */
+
+* {
+  box-sizing: border-box;
+  }
+
+/* ================================
+Base Styles
+================================ */
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background-color: #f4f6f8;
+color: #222;
+}
+
+/* ================================
+Header
+================================ */
+
+header {
+background-color: #1f2937;
+color: white;
+text-align: center;
+padding: 32px 20px;
+}
+
+header h1 {
+margin: 0 0 8px;
+font-size: 2.5rem;
+}
+
+header p {
+margin: 0 0 20px;
+}
+
+/* ================================
+Navigation
+================================ */
+
+nav {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 16px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+padding: 8px 14px;
+border-radius: 5px;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+background-color: white;
+color: #1f2937;
+}
+
+/* ================================
+Main Content
+================================ */
+
+main {
+max-width: 900px;
+margin: 30px auto;
+padding: 0 20px;
+}
+
+main > h2,
+main > p {
+text-align: center;
+}
+
+/* ================================
+Sections / Cards
+================================ */
+
+section {
+background-color: white;
+padding: 24px;
+margin-bottom: 24px;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h3 {
+margin-top: 0;
+}
+
+/* ================================
+Features Grid
+================================ */
+
+.features {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+gap: 16px;
+padding: 0;
+list-style: none;
+}
+
+.features li {
+background-color: #f1f5f9;
+padding: 20px;
+border-radius: 8px;
+border: 1px solid #dbe2e8;
+}
+
+/* ================================
+Table
+================================ */
+
+table {
+width: 100%;
+border-collapse: collapse;
+}
+
+th,
+td {
+border: 1px solid #ccc;
+padding: 12px;
+text-align: left;
+}
+
+th {
+background-color: #1f2937;
+color: white;
+}
+
+/* ================================
+Feedback Form
+================================ */
+
+form {
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+form input,
+form textarea {
+width: 100%;
+padding: 10px;
+font: inherit;
+border: 1px solid #bbb;
+border-radius: 5px;
+}
+
+form textarea {
+resize: vertical;
+min-height: 120px;
+}
+
+form button,
+button {
+padding: 10px 18px;
+border: none;
+border-radius: 5px;
+background-color: #1f2937;
+color: white;
+font: inherit;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover,
+button:hover {
+background-color: #374151;
+transform: translateY(-2px);
+}
+
+/* ================================
+Footer
+================================ */
+
+footer {
+text-align: center;
+padding: 20px;
+background-color: #1f2937;
+color: white;
+}
+
+/* ================================
+Mobile Responsive Styles
+================================ */
+
+@media (max-width: 600px) {
+header {
+padding: 20px 12px;
+}
+
+```
+header h1 {
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 0.95rem;
+}
+
+main {
+    margin: 20px auto;
+    padding: 0 12px;
+}
+
+section {
+    padding: 18px;
+}
+
+nav {
+    gap: 10px;
+}
+
+nav a {
+    padding: 6px 10px;
+}
+```
+
+}
