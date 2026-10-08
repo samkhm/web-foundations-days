@@ -27,6 +27,7 @@ async function loadUsers() {
     } catch (error) {
         statusMessage.textContent =
             "Unable to load users. Please try again.";
+
         users = [];
         renderUsers(users);
     } finally {
@@ -72,19 +73,16 @@ function renderUsers(list) {
     });
 }
 
-// Filter users
+// Filter users without making another API request
 filterInput.addEventListener("input", () => {
-const searchTerm = filterInput.value.trim().toLowerCase();
+    const searchTerm = filterInput.value.trim().toLowerCase();
 
-```
-const filteredUsers = users.filter((user) =>
-    user.name.toLowerCase().includes(searchTerm)
-);
+    const filteredUsers = users.filter((user) =>
+        user.name.toLowerCase().includes(searchTerm)
+    );
 
-renderUsers(filteredUsers);
-```
-
+    renderUsers(filteredUsers);
 });
 
-// Load users when the button is clicked
+// Load users when button is clicked
 loadButton.addEventListener("click", loadUsers);
