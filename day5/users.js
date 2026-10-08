@@ -8,7 +8,7 @@ let users = [];
 // Load users from the API
 async function loadUsers() {
     loadButton.disabled = true;
-    statusMessage.textContent = "Loading users...";
+    statusMessage.textContent = "Loading users....";
 
     try {
         const response = await fetch(
